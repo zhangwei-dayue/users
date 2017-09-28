@@ -114,7 +114,7 @@ feature "测试不同格式生日日期", :type => :feature do
     end
   end
 
-  context "日期格式设置为big-endian" do
+  context "日期格式设置为little-endian" do
     before do
       # 把日期格式设置为little-endian
       $APP["birthday_format"] = "little-endian"
@@ -226,7 +226,7 @@ feature "测试不同格式生日日期", :type => :feature do
     end
   end
 
-  context "日期格式设置为big-endian" do
+  context "日期格式设置为middle-endian" do
     before do
       # 把日期格式设置为middle-endian
       $APP["birthday_format"] = "middle-endian"
