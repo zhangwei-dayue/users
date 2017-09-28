@@ -14,5 +14,6 @@ module Users
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    $APP = YAML.load_file("#{Rails.root}/config/app.yml") #随系统启动 birthday_format 设置
   end
 end

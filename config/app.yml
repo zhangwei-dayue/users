@@ -1,0 +1,2 @@
+# 可以设置程序处理的日期格式模式
+birthday_format: "big-endian"
