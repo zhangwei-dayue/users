@@ -5,8 +5,8 @@
 
   <div class="form-inputs">
     <%= f.input :email, label: "邮箱", required: true, autofocus: true %>
-    
-    # 根据设置变化提示信息
+
+    <!-- 根据设置变化提示信息 -->
     <% if $APP["birthday_format"] == "big-endian" %>
       <%= f.input :birthday, label: "生日", required: true, hint: ("生日格式为：年-月-日 或中文格式") %>
     <% elsif $APP["birthday_format"] == "little-endian" %>
